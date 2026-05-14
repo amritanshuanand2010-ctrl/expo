@@ -1,0 +1,2274 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ExpoModulesWorklets",
+    "printedName": "ExpoModulesWorklets",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "ExpoModulesJSI",
+        "printedName": "ExpoModulesJSI",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesCore",
+        "printedName": "ExpoModulesCore",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DynamicSerializableType",
+        "printedName": "DynamicSerializableType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "innerType",
+            "printedName": "innerType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any ExpoModulesWorklets.AnySerializable.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnySerializable",
+                    "printedName": "ExpoModulesWorklets.AnySerializable",
+                    "usr": "s:19ExpoModulesWorklets15AnySerializableP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV05innerF0AA03AnyE0_pXpvp",
+            "mangledName": "$s19ExpoModulesWorklets23DynamicSerializableTypeV05innerF0AA03AnyE0_pXpvp",
+            "moduleName": "ExpoModulesWorklets",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExistentialMetatype",
+                    "printedName": "any ExpoModulesWorklets.AnySerializable.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnySerializable",
+                        "printedName": "ExpoModulesWorklets.AnySerializable",
+                        "usr": "s:19ExpoModulesWorklets15AnySerializableP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV05innerF0AA03AnyE0_pXpvg",
+                "mangledName": "$s19ExpoModulesWorklets23DynamicSerializableTypeV05innerF0AA03AnyE0_pXpvg",
+                "moduleName": "ExpoModulesWorklets",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "wraps",
+            "printedName": "wraps(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV5wrapsySbxmlF",
+            "mangledName": "$s19ExpoModulesWorklets23DynamicSerializableTypeV5wrapsySbxmlF",
+            "moduleName": "ExpoModulesWorklets",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<InnerType>",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "equals",
+            "printedName": "equals(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyDynamicType",
+                "printedName": "any ExpoModulesCore.AnyDynamicType",
+                "usr": "s:15ExpoModulesCore14AnyDynamicTypeP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV6equalsySb0aB4Core03AnydF0_pF",
+            "mangledName": "$s19ExpoModulesWorklets23DynamicSerializableTypeV6equalsySb0aB4Core03AnydF0_pF",
+            "moduleName": "ExpoModulesWorklets",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cast",
+            "printedName": "cast(jsValue:appContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JavaScriptValue",
+                "printedName": "ExpoModulesJSI.JavaScriptValue",
+                "usr": "s:14ExpoModulesJSI15JavaScriptValueC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppContext",
+                "printedName": "ExpoModulesCore.AppContext",
+                "usr": "c:@M@ExpoModulesCore@objc(cs)EXAppContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV4cast7jsValue10appContextyp0aB3JSI010JavaScriptI0C_0aB4Core03AppK0CtKF",
+            "mangledName": "$s19ExpoModulesWorklets23DynamicSerializableTypeV4cast7jsValue10appContextyp0aB3JSI010JavaScriptI0C_0aB4Core03AppK0CtKF",
+            "moduleName": "ExpoModulesWorklets",
+            "declAttributes": [
+              "Custom"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cast",
+            "printedName": "cast(_:appContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppContext",
+                "printedName": "ExpoModulesCore.AppContext",
+                "usr": "c:@M@ExpoModulesCore@objc(cs)EXAppContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV4cast_10appContextypx_0aB4Core03AppI0CtKlF",
+            "mangledName": "$s19ExpoModulesWorklets23DynamicSerializableTypeV4cast_10appContextypx_0aB4Core03AppI0CtKlF",
+            "moduleName": "ExpoModulesWorklets",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<ValueType>",
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "castToJS",
+            "printedName": "castToJS(_:appContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JavaScriptValue",
+                "printedName": "ExpoModulesJSI.JavaScriptValue",
+                "usr": "s:14ExpoModulesJSI15JavaScriptValueC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppContext",
+                "printedName": "ExpoModulesCore.AppContext",
+                "usr": "c:@M@ExpoModulesCore@objc(cs)EXAppContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV8castToJS_10appContext0aB3JSI15JavaScriptValueCx_0aB4Core03AppK0CtKlF",
+            "mangledName": "$s19ExpoModulesWorklets23DynamicSerializableTypeV8castToJS_10appContext0aB3JSI15JavaScriptValueCx_0aB4Core03AppK0CtKlF",
+            "moduleName": "ExpoModulesWorklets",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<ValueType>",
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "convertResult",
+            "printedName": "convertResult(_:appContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppContext",
+                "printedName": "ExpoModulesCore.AppContext",
+                "usr": "c:@M@ExpoModulesCore@objc(cs)EXAppContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV13convertResult_10appContextypx_0aB4Core03AppJ0CtKlF",
+            "mangledName": "$s19ExpoModulesWorklets23DynamicSerializableTypeV13convertResult_10appContextypx_0aB4Core03AppJ0CtKlF",
+            "moduleName": "ExpoModulesWorklets",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<ResultType>",
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV11descriptionSSvp",
+            "mangledName": "$s19ExpoModulesWorklets23DynamicSerializableTypeV11descriptionSSvp",
+            "moduleName": "ExpoModulesWorklets",
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV11descriptionSSvg",
+                "mangledName": "$s19ExpoModulesWorklets23DynamicSerializableTypeV11descriptionSSvg",
+                "moduleName": "ExpoModulesWorklets",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(innerType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSerializableType",
+                "printedName": "ExpoModulesWorklets.DynamicSerializableType",
+                "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any ExpoModulesWorklets.AnySerializable.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnySerializable",
+                    "printedName": "ExpoModulesWorklets.AnySerializable",
+                    "usr": "s:19ExpoModulesWorklets15AnySerializableP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV05innerF0AcA03AnyE0_pXp_tcfc",
+            "mangledName": "$s19ExpoModulesWorklets23DynamicSerializableTypeV05innerF0AcA03AnyE0_pXp_tcfc",
+            "moduleName": "ExpoModulesWorklets",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV",
+        "mangledName": "$s19ExpoModulesWorklets23DynamicSerializableTypeV",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AnyDynamicType",
+            "printedName": "AnyDynamicType",
+            "usr": "s:15ExpoModulesCore14AnyDynamicTypeP",
+            "mangledName": "$s15ExpoModulesCore14AnyDynamicTypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NotSerializableException",
+        "printedName": "NotSerializableException",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "reason",
+            "printedName": "reason",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ExpoModulesWorklets24NotSerializableExceptionC6reasonSSvp",
+            "mangledName": "$s19ExpoModulesWorklets24NotSerializableExceptionC6reasonSSvp",
+            "moduleName": "ExpoModulesWorklets",
+            "overriding": true,
+            "declAttributes": [
+              "Final",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ExpoModulesWorklets24NotSerializableExceptionC6reasonSSvg",
+                "mangledName": "$s19ExpoModulesWorklets24NotSerializableExceptionC6reasonSSvg",
+                "moduleName": "ExpoModulesWorklets",
+                "overriding": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:file:line:function:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NotSerializableException",
+                "printedName": "ExpoModulesWorklets.NotSerializableException",
+                "usr": "s:19ExpoModulesWorklets24NotSerializableExceptionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any ExpoModulesWorklets.AnySerializable.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnySerializable",
+                    "printedName": "ExpoModulesWorklets.AnySerializable",
+                    "usr": "s:19ExpoModulesWorklets15AnySerializableP"
+                  }
+                ],
+                "paramValueOwnership": "Owned"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "hasDefaultArg": true,
+                "usr": "s:Su"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19ExpoModulesWorklets24NotSerializableExceptionC_4file4line8functionAcA03AnyE0_pXp_SSSuSStcfc",
+            "mangledName": "$s19ExpoModulesWorklets24NotSerializableExceptionC_4file4line8functionAcA03AnyE0_pXp_SSSuSStcfc",
+            "moduleName": "ExpoModulesWorklets",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override",
+              "UsableFromInline"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19ExpoModulesWorklets24NotSerializableExceptionC",
+        "mangledName": "$s19ExpoModulesWorklets24NotSerializableExceptionC",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "superclassUsr": "s:15ExpoModulesCore16GenericExceptionC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ExpoModulesCore.GenericException<any ExpoModulesWorklets.AnySerializable.Type>",
+          "ExpoModulesCore.Exception"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ChainableException",
+            "printedName": "ChainableException",
+            "usr": "s:15ExpoModulesCore18ChainableExceptionP",
+            "mangledName": "$s15ExpoModulesCore18ChainableExceptionP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CodedError",
+            "printedName": "CodedError",
+            "usr": "s:15ExpoModulesCore10CodedErrorP",
+            "mangledName": "$s15ExpoModulesCore10CodedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "JavaScriptThrowable",
+            "printedName": "JavaScriptThrowable",
+            "usr": "s:14ExpoModulesJSI19JavaScriptThrowableP",
+            "mangledName": "$s14ExpoModulesJSI19JavaScriptThrowableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesCore",
+        "printedName": "ExpoModulesCore",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesJSI",
+        "printedName": "ExpoModulesJSI",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DynamicWorkletType",
+        "printedName": "DynamicWorkletType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "serializableDynamicType",
+            "printedName": "serializableDynamicType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSerializableType",
+                "printedName": "ExpoModulesWorklets.DynamicSerializableType",
+                "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeV012serializabledF0AA0d12SerializableF0Vvp",
+            "mangledName": "$s19ExpoModulesWorklets18DynamicWorkletTypeV012serializabledF0AA0d12SerializableF0Vvp",
+            "moduleName": "ExpoModulesWorklets",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSerializableType",
+                    "printedName": "ExpoModulesWorklets.DynamicSerializableType",
+                    "usr": "s:19ExpoModulesWorklets23DynamicSerializableTypeV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeV012serializabledF0AA0d12SerializableF0Vvg",
+                "mangledName": "$s19ExpoModulesWorklets18DynamicWorkletTypeV012serializabledF0AA0d12SerializableF0Vvg",
+                "moduleName": "ExpoModulesWorklets",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "wraps",
+            "printedName": "wraps(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeV5wrapsySbxmlF",
+            "mangledName": "$s19ExpoModulesWorklets18DynamicWorkletTypeV5wrapsySbxmlF",
+            "moduleName": "ExpoModulesWorklets",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<InnerType>",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "equals",
+            "printedName": "equals(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnyDynamicType",
+                "printedName": "any ExpoModulesCore.AnyDynamicType",
+                "usr": "s:15ExpoModulesCore14AnyDynamicTypeP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeV6equalsySb0aB4Core03AnydF0_pF",
+            "mangledName": "$s19ExpoModulesWorklets18DynamicWorkletTypeV6equalsySb0aB4Core03AnydF0_pF",
+            "moduleName": "ExpoModulesWorklets",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cast",
+            "printedName": "cast(jsValue:appContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JavaScriptValue",
+                "printedName": "ExpoModulesJSI.JavaScriptValue",
+                "usr": "s:14ExpoModulesJSI15JavaScriptValueC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppContext",
+                "printedName": "ExpoModulesCore.AppContext",
+                "usr": "c:@M@ExpoModulesCore@objc(cs)EXAppContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeV4cast7jsValue10appContextyp0aB3JSI010JavaScriptI0C_0aB4Core03AppK0CtKF",
+            "mangledName": "$s19ExpoModulesWorklets18DynamicWorkletTypeV4cast7jsValue10appContextyp0aB3JSI010JavaScriptI0C_0aB4Core03AppK0CtKF",
+            "moduleName": "ExpoModulesWorklets",
+            "declAttributes": [
+              "Custom"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cast",
+            "printedName": "cast(_:appContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppContext",
+                "printedName": "ExpoModulesCore.AppContext",
+                "usr": "c:@M@ExpoModulesCore@objc(cs)EXAppContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeV4cast_10appContextypx_0aB4Core03AppI0CtKlF",
+            "mangledName": "$s19ExpoModulesWorklets18DynamicWorkletTypeV4cast_10appContextypx_0aB4Core03AppI0CtKlF",
+            "moduleName": "ExpoModulesWorklets",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<ValueType>",
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "castToJS",
+            "printedName": "castToJS(_:appContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JavaScriptValue",
+                "printedName": "ExpoModulesJSI.JavaScriptValue",
+                "usr": "s:14ExpoModulesJSI15JavaScriptValueC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppContext",
+                "printedName": "ExpoModulesCore.AppContext",
+                "usr": "c:@M@ExpoModulesCore@objc(cs)EXAppContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeV8castToJS_10appContext0aB3JSI15JavaScriptValueCx_0aB4Core03AppK0CtKlF",
+            "mangledName": "$s19ExpoModulesWorklets18DynamicWorkletTypeV8castToJS_10appContext0aB3JSI15JavaScriptValueCx_0aB4Core03AppK0CtKlF",
+            "moduleName": "ExpoModulesWorklets",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<ValueType>",
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "convertResult",
+            "printedName": "convertResult(_:appContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppContext",
+                "printedName": "ExpoModulesCore.AppContext",
+                "usr": "c:@M@ExpoModulesCore@objc(cs)EXAppContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeV13convertResult_10appContextypx_0aB4Core03AppJ0CtKlF",
+            "mangledName": "$s19ExpoModulesWorklets18DynamicWorkletTypeV13convertResult_10appContextypx_0aB4Core03AppJ0CtKlF",
+            "moduleName": "ExpoModulesWorklets",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<ResultType>",
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeV11descriptionSSvp",
+            "mangledName": "$s19ExpoModulesWorklets18DynamicWorkletTypeV11descriptionSSvp",
+            "moduleName": "ExpoModulesWorklets",
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeV11descriptionSSvg",
+                "mangledName": "$s19ExpoModulesWorklets18DynamicWorkletTypeV11descriptionSSvg",
+                "moduleName": "ExpoModulesWorklets",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicWorkletType",
+                "printedName": "ExpoModulesWorklets.DynamicWorkletType",
+                "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeVACycfc",
+            "mangledName": "$s19ExpoModulesWorklets18DynamicWorkletTypeVACycfc",
+            "moduleName": "ExpoModulesWorklets",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19ExpoModulesWorklets18DynamicWorkletTypeV",
+        "mangledName": "$s19ExpoModulesWorklets18DynamicWorkletTypeV",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AnyDynamicType",
+            "printedName": "AnyDynamicType",
+            "usr": "s:15ExpoModulesCore14AnyDynamicTypeP",
+            "mangledName": "$s15ExpoModulesCore14AnyDynamicTypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesCore",
+        "printedName": "ExpoModulesCore",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnySerializable",
+        "printedName": "AnySerializable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "valueType",
+            "printedName": "valueType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SerializableValueType",
+                "printedName": "ExpoModulesWorklets_ios_objc.SerializableValueType",
+                "usr": "c:@E@EXSerializableValueType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ExpoModulesWorklets15AnySerializableP9valueTypeSo019EXSerializableValueG0Vvp",
+            "mangledName": "$s19ExpoModulesWorklets15AnySerializableP9valueTypeSo019EXSerializableValueG0Vvp",
+            "moduleName": "ExpoModulesWorklets",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SerializableValueType",
+                    "printedName": "ExpoModulesWorklets_ios_objc.SerializableValueType",
+                    "usr": "c:@E@EXSerializableValueType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ExpoModulesWorklets15AnySerializableP9valueTypeSo019EXSerializableValueG0Vvg",
+                "mangledName": "$s19ExpoModulesWorklets15AnySerializableP9valueTypeSo019EXSerializableValueG0Vvg",
+                "moduleName": "ExpoModulesWorklets",
+                "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesWorklets.AnySerializable>",
+                "sugared_genericSig": "<Self where Self : ExpoModulesWorklets.AnySerializable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getDynamicType",
+            "printedName": "getDynamicType()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyDynamicType",
+                "printedName": "any ExpoModulesCore.AnyDynamicType",
+                "usr": "s:15ExpoModulesCore14AnyDynamicTypeP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets15AnySerializablePAAE14getDynamicType0aB4Core0dgH0_pyFZ",
+            "mangledName": "$s19ExpoModulesWorklets15AnySerializablePAAE14getDynamicType0aB4Core0dgH0_pyFZ",
+            "moduleName": "ExpoModulesWorklets",
+            "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesWorklets.AnySerializable>",
+            "sugared_genericSig": "<Self where Self : ExpoModulesWorklets.AnySerializable>",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:19ExpoModulesWorklets15AnySerializableP",
+        "mangledName": "$s19ExpoModulesWorklets15AnySerializableP",
+        "moduleName": "ExpoModulesWorklets",
+        "genericSig": "<τ_0_0 : ExpoModulesCore.AnyArgument>",
+        "sugared_genericSig": "<Self : ExpoModulesCore.AnyArgument>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyArgument",
+            "printedName": "AnyArgument",
+            "usr": "s:15ExpoModulesCore11AnyArgumentP",
+            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Serializable",
+        "printedName": "Serializable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "jsSerializable",
+            "printedName": "jsSerializable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JavaScriptSerializable",
+                "printedName": "ExpoModulesWorklets_ios_objc.JavaScriptSerializable",
+                "usr": "c:objc(cs)EXJavaScriptSerializable"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ExpoModulesWorklets12SerializableC02jsD0So012EXJavaScriptD0Cvp",
+            "mangledName": "$s19ExpoModulesWorklets12SerializableC02jsD0So012EXJavaScriptD0Cvp",
+            "moduleName": "ExpoModulesWorklets",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JavaScriptSerializable",
+                    "printedName": "ExpoModulesWorklets_ios_objc.JavaScriptSerializable",
+                    "usr": "c:objc(cs)EXJavaScriptSerializable"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ExpoModulesWorklets12SerializableC02jsD0So012EXJavaScriptD0Cvg",
+                "mangledName": "$s19ExpoModulesWorklets12SerializableC02jsD0So012EXJavaScriptD0Cvg",
+                "moduleName": "ExpoModulesWorklets",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "valueType",
+            "printedName": "valueType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SerializableValueType",
+                "printedName": "ExpoModulesWorklets_ios_objc.SerializableValueType",
+                "usr": "c:@E@EXSerializableValueType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ExpoModulesWorklets12SerializableC9valueTypeSo019EXSerializableValueF0Vvp",
+            "mangledName": "$s19ExpoModulesWorklets12SerializableC9valueTypeSo019EXSerializableValueF0Vvp",
+            "moduleName": "ExpoModulesWorklets",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SerializableValueType",
+                    "printedName": "ExpoModulesWorklets_ios_objc.SerializableValueType",
+                    "usr": "c:@E@EXSerializableValueType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ExpoModulesWorklets12SerializableC9valueTypeSo019EXSerializableValueF0Vvg",
+                "mangledName": "$s19ExpoModulesWorklets12SerializableC9valueTypeSo019EXSerializableValueF0Vvg",
+                "moduleName": "ExpoModulesWorklets",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Serializable",
+                "printedName": "ExpoModulesWorklets.Serializable",
+                "usr": "s:19ExpoModulesWorklets12SerializableC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JavaScriptSerializable",
+                "printedName": "ExpoModulesWorklets_ios_objc.JavaScriptSerializable",
+                "usr": "c:objc(cs)EXJavaScriptSerializable"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19ExpoModulesWorklets12SerializableCyACSo012EXJavaScriptD0Ccfc",
+            "mangledName": "$s19ExpoModulesWorklets12SerializableCyACSo012EXJavaScriptD0Ccfc",
+            "moduleName": "ExpoModulesWorklets",
+            "declAttributes": [
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19ExpoModulesWorklets12SerializableC",
+        "mangledName": "$s19ExpoModulesWorklets12SerializableC",
+        "moduleName": "ExpoModulesWorklets",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AnySerializable",
+            "printedName": "AnySerializable",
+            "usr": "s:19ExpoModulesWorklets15AnySerializableP",
+            "mangledName": "$s19ExpoModulesWorklets15AnySerializableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyArgument",
+            "printedName": "AnyArgument",
+            "usr": "s:15ExpoModulesCore11AnyArgumentP",
+            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesCore",
+        "printedName": "ExpoModulesCore",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Worklet",
+        "printedName": "Worklet",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "serializable",
+            "printedName": "serializable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Serializable",
+                "printedName": "ExpoModulesWorklets.Serializable",
+                "usr": "s:19ExpoModulesWorklets12SerializableC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ExpoModulesWorklets7WorkletC12serializableAA12SerializableCvp",
+            "mangledName": "$s19ExpoModulesWorklets7WorkletC12serializableAA12SerializableCvp",
+            "moduleName": "ExpoModulesWorklets",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Serializable",
+                    "printedName": "ExpoModulesWorklets.Serializable",
+                    "usr": "s:19ExpoModulesWorklets12SerializableC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ExpoModulesWorklets7WorkletC12serializableAA12SerializableCvg",
+                "mangledName": "$s19ExpoModulesWorklets7WorkletC12serializableAA12SerializableCvg",
+                "moduleName": "ExpoModulesWorklets",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Worklet",
+                "printedName": "ExpoModulesWorklets.Worklet",
+                "usr": "s:19ExpoModulesWorklets7WorkletC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Serializable",
+                "printedName": "ExpoModulesWorklets.Serializable",
+                "usr": "s:19ExpoModulesWorklets12SerializableC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19ExpoModulesWorklets7WorkletCyAcA12SerializableCKcfc",
+            "mangledName": "$s19ExpoModulesWorklets7WorkletCyAcA12SerializableCKcfc",
+            "moduleName": "ExpoModulesWorklets",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "valueType",
+            "printedName": "valueType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SerializableValueType",
+                "printedName": "ExpoModulesWorklets_ios_objc.SerializableValueType",
+                "usr": "c:@E@EXSerializableValueType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ExpoModulesWorklets7WorkletC9valueTypeSo019EXSerializableValueF0Vvp",
+            "mangledName": "$s19ExpoModulesWorklets7WorkletC9valueTypeSo019EXSerializableValueF0Vvp",
+            "moduleName": "ExpoModulesWorklets",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SerializableValueType",
+                    "printedName": "ExpoModulesWorklets_ios_objc.SerializableValueType",
+                    "usr": "c:@E@EXSerializableValueType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ExpoModulesWorklets7WorkletC9valueTypeSo019EXSerializableValueF0Vvg",
+                "mangledName": "$s19ExpoModulesWorklets7WorkletC9valueTypeSo019EXSerializableValueF0Vvg",
+                "moduleName": "ExpoModulesWorklets",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "schedule",
+            "printedName": "schedule(on:arguments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkletRuntime",
+                "printedName": "ExpoModulesWorklets.WorkletRuntime",
+                "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets7WorkletC8schedule2on9argumentsyAA0D7RuntimeC_SayypGtF",
+            "mangledName": "$s19ExpoModulesWorklets7WorkletC8schedule2on9argumentsyAA0D7RuntimeC_SayypGtF",
+            "moduleName": "ExpoModulesWorklets",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "execute",
+            "printedName": "execute(on:arguments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WorkletRuntime",
+                "printedName": "ExpoModulesWorklets.WorkletRuntime",
+                "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets7WorkletC7execute2on9argumentsyAA0D7RuntimeC_SayypGtF",
+            "mangledName": "$s19ExpoModulesWorklets7WorkletC7execute2on9argumentsyAA0D7RuntimeC_SayypGtF",
+            "moduleName": "ExpoModulesWorklets",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDynamicType",
+            "printedName": "getDynamicType()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyDynamicType",
+                "printedName": "any ExpoModulesCore.AnyDynamicType",
+                "usr": "s:15ExpoModulesCore14AnyDynamicTypeP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets7WorkletC14getDynamicType0aB4Core03AnyfG0_pyFZ",
+            "mangledName": "$s19ExpoModulesWorklets7WorkletC14getDynamicType0aB4Core03AnyfG0_pyFZ",
+            "moduleName": "ExpoModulesWorklets",
+            "static": true,
+            "declAttributes": [
+              "Nonisolated",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19ExpoModulesWorklets7WorkletC",
+        "mangledName": "$s19ExpoModulesWorklets7WorkletC",
+        "moduleName": "ExpoModulesWorklets",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AnySerializable",
+            "printedName": "AnySerializable",
+            "usr": "s:19ExpoModulesWorklets15AnySerializableP",
+            "mangledName": "$s19ExpoModulesWorklets15AnySerializableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyArgument",
+            "printedName": "AnyArgument",
+            "usr": "s:15ExpoModulesCore11AnyArgumentP",
+            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NotWorkletException",
+        "printedName": "NotWorkletException",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "reason",
+            "printedName": "reason",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ExpoModulesWorklets19NotWorkletExceptionC6reasonSSvp",
+            "mangledName": "$s19ExpoModulesWorklets19NotWorkletExceptionC6reasonSSvp",
+            "moduleName": "ExpoModulesWorklets",
+            "overriding": true,
+            "declAttributes": [
+              "Final",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ExpoModulesWorklets19NotWorkletExceptionC6reasonSSvg",
+                "mangledName": "$s19ExpoModulesWorklets19NotWorkletExceptionC6reasonSSvg",
+                "moduleName": "ExpoModulesWorklets",
+                "overriding": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:file:line:function:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NotWorkletException",
+                "printedName": "ExpoModulesWorklets.NotWorkletException",
+                "usr": "s:19ExpoModulesWorklets19NotWorkletExceptionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SerializableValueType",
+                "printedName": "ExpoModulesWorklets_ios_objc.SerializableValueType",
+                "paramValueOwnership": "Owned",
+                "usr": "c:@E@EXSerializableValueType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "hasDefaultArg": true,
+                "usr": "s:Su"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19ExpoModulesWorklets19NotWorkletExceptionC_4file4line8functionACSo23EXSerializableValueTypeV_SSSuSStcfc",
+            "mangledName": "$s19ExpoModulesWorklets19NotWorkletExceptionC_4file4line8functionACSo23EXSerializableValueTypeV_SSSuSStcfc",
+            "moduleName": "ExpoModulesWorklets",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override",
+              "UsableFromInline"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19ExpoModulesWorklets19NotWorkletExceptionC",
+        "mangledName": "$s19ExpoModulesWorklets19NotWorkletExceptionC",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "superclassUsr": "s:15ExpoModulesCore16GenericExceptionC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ExpoModulesCore.GenericException<ExpoModulesWorklets_ios_objc.SerializableValueType>",
+          "ExpoModulesCore.Exception"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ChainableException",
+            "printedName": "ChainableException",
+            "usr": "s:15ExpoModulesCore18ChainableExceptionP",
+            "mangledName": "$s15ExpoModulesCore18ChainableExceptionP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CodedError",
+            "printedName": "CodedError",
+            "usr": "s:15ExpoModulesCore10CodedErrorP",
+            "mangledName": "$s15ExpoModulesCore10CodedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "JavaScriptThrowable",
+            "printedName": "JavaScriptThrowable",
+            "usr": "s:14ExpoModulesJSI19JavaScriptThrowableP",
+            "mangledName": "$s14ExpoModulesJSI19JavaScriptThrowableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesCore",
+        "printedName": "ExpoModulesCore",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesJSI",
+        "printedName": "ExpoModulesJSI",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WorkletIntegration",
+        "printedName": "WorkletIntegration",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ExpoModulesWorklets@objc(cs)EXWorkletIntegration(cm)register",
+            "mangledName": "$s19ExpoModulesWorklets18WorkletIntegrationC8registeryyFZ",
+            "moduleName": "ExpoModulesWorklets",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WorkletIntegration",
+                "printedName": "ExpoModulesWorklets.WorkletIntegration",
+                "usr": "c:@M@ExpoModulesWorklets@objc(cs)EXWorkletIntegration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ExpoModulesWorklets@objc(cs)EXWorkletIntegration(im)init",
+            "mangledName": "$s19ExpoModulesWorklets18WorkletIntegrationCACycfc",
+            "moduleName": "ExpoModulesWorklets",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ExpoModulesWorklets@objc(cs)EXWorkletIntegration",
+        "mangledName": "$s19ExpoModulesWorklets18WorkletIntegrationC",
+        "moduleName": "ExpoModulesWorklets",
+        "objc_name": "EXWorkletIntegration",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "Exported"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesWorklets_ios_objc",
+        "printedName": "ExpoModulesWorklets_ios_objc",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "Exported"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesJSI",
+        "printedName": "ExpoModulesJSI",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesCore",
+        "printedName": "ExpoModulesCore",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesWorklets"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WorkletRuntime",
+        "printedName": "WorkletRuntime",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "handle",
+            "printedName": "handle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WorkletRuntimeHandle",
+                "printedName": "ExpoModulesWorklets_ios_objc.WorkletRuntimeHandle",
+                "usr": "c:objc(cs)EXWorkletRuntimeHandle"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC6handleSo09EXWorkletE6HandleCvp",
+            "mangledName": "$s19ExpoModulesWorklets14WorkletRuntimeC6handleSo09EXWorkletE6HandleCvp",
+            "moduleName": "ExpoModulesWorklets",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WorkletRuntimeHandle",
+                    "printedName": "ExpoModulesWorklets_ios_objc.WorkletRuntimeHandle",
+                    "usr": "c:objc(cs)EXWorkletRuntimeHandle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC6handleSo09EXWorkletE6HandleCvg",
+                "mangledName": "$s19ExpoModulesWorklets14WorkletRuntimeC6handleSo09EXWorkletE6HandleCvg",
+                "moduleName": "ExpoModulesWorklets",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(runtimePointer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ExpoModulesWorklets.WorkletRuntime?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WorkletRuntime",
+                    "printedName": "ExpoModulesWorklets.WorkletRuntime",
+                    "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutableRawPointer",
+                "printedName": "Swift.UnsafeMutableRawPointer",
+                "usr": "s:Sv"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC14runtimePointerACSgSv_tcfc",
+            "mangledName": "$s19ExpoModulesWorklets14WorkletRuntimeC14runtimePointerACSgSv_tcfc",
+            "moduleName": "ExpoModulesWorklets",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "schedule",
+            "printedName": "schedule(_:arguments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JavaScriptSerializable",
+                "printedName": "ExpoModulesWorklets_ios_objc.JavaScriptSerializable",
+                "usr": "c:objc(cs)EXJavaScriptSerializable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC8schedule_9argumentsySo24EXJavaScriptSerializableC_SayypGtF",
+            "mangledName": "$s19ExpoModulesWorklets14WorkletRuntimeC8schedule_9argumentsySo24EXJavaScriptSerializableC_SayypGtF",
+            "moduleName": "ExpoModulesWorklets",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "execute",
+            "printedName": "execute(_:arguments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JavaScriptSerializable",
+                "printedName": "ExpoModulesWorklets_ios_objc.JavaScriptSerializable",
+                "usr": "c:objc(cs)EXJavaScriptSerializable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC7execute_9argumentsySo24EXJavaScriptSerializableC_SayypGtF",
+            "mangledName": "$s19ExpoModulesWorklets14WorkletRuntimeC7execute_9argumentsySo24EXJavaScriptSerializableC_SayypGtF",
+            "moduleName": "ExpoModulesWorklets",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WorkletRuntime",
+                "printedName": "ExpoModulesWorklets.WorkletRuntime",
+                "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19ExpoModulesWorklets14WorkletRuntimeCACycfc",
+            "mangledName": "$s19ExpoModulesWorklets14WorkletRuntimeCACycfc",
+            "moduleName": "ExpoModulesWorklets",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(unsafePointer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WorkletRuntime",
+                "printedName": "ExpoModulesWorklets.WorkletRuntime",
+                "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutableRawPointer",
+                "printedName": "Swift.UnsafeMutableRawPointer",
+                "usr": "s:Sv"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC13unsafePointerACSv_tcfc",
+            "mangledName": "$s19ExpoModulesWorklets14WorkletRuntimeC13unsafePointerACSv_tcfc",
+            "moduleName": "ExpoModulesWorklets",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(unsafePointer:scheduler:dispatch:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WorkletRuntime",
+                "printedName": "ExpoModulesWorklets.WorkletRuntime",
+                "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutableRawPointer",
+                "printedName": "Swift.UnsafeMutableRawPointer",
+                "usr": "s:Sv"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutableRawPointer",
+                "printedName": "Swift.UnsafeMutableRawPointer",
+                "usr": "s:Sv"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeRawPointer",
+                "printedName": "Swift.UnsafeRawPointer",
+                "usr": "s:SV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC13unsafePointer9scheduler8dispatchACSv_SvSVtcfc",
+            "mangledName": "$s19ExpoModulesWorklets14WorkletRuntimeC13unsafePointer9scheduler8dispatchACSv_SvSVtcfc",
+            "moduleName": "ExpoModulesWorklets",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19ExpoModulesWorklets14WorkletRuntimeC",
+        "mangledName": "$s19ExpoModulesWorklets14WorkletRuntimeC",
+        "moduleName": "ExpoModulesWorklets",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:14ExpoModulesJSI17JavaScriptRuntimeC",
+        "superclassNames": [
+          "ExpoModulesJSI.JavaScriptRuntime"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/tsapeta\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesWorklets\/ExpoModulesWorklets\/Core\/Worklet.swift",
+      "kind": "Array",
+      "offset": 694,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/tsapeta\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesWorklets\/ExpoModulesWorklets\/Core\/Worklet.swift",
+      "kind": "Array",
+      "offset": 996,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/tsapeta\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesWorklets\/ExpoModulesWorklets\/WorkletRuntime.swift",
+      "kind": "Array",
+      "offset": 640,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/tsapeta\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesWorklets\/ExpoModulesWorklets\/WorkletRuntime.swift",
+      "kind": "Array",
+      "offset": 857,
+      "length": 2,
+      "value": "[]"
+    }
+  ]
+}
