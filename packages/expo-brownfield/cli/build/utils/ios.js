@@ -4,11 +4,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.shipSwiftPackage = exports.shipFrameworks = exports.printIosConfig = exports.makeArtifactsDirectory = exports.binaryTarget = exports.libraryProduct = exports.getSupportedPlatforms = exports.generatePackageMetadataFile = exports.findWorkspace = exports.findScheme = exports.createXCframework = exports.createSwiftPackage = exports.copyXCFrameworks = exports.buildFramework = exports.cleanUpArtifacts = exports.enumerateSourceBuiltDeps = void 0;
+const spawn_async_1 = __importDefault(require("@expo/spawn-async"));
 const chalk_1 = __importDefault(require("chalk"));
 const node_child_process_1 = require("node:child_process");
 const node_fs_1 = __importDefault(require("node:fs"));
 const node_path_1 = __importDefault(require("node:path"));
-const commands_1 = require("./commands");
 const constants_1 = require("./constants");
 const error_1 = __importDefault(require("./error"));
 const precompiled_1 = require("./precompiled");
@@ -112,7 +112,7 @@ const bundleSourceBuiltFramework = async (config, name, dest) => {
         console.log(`xcodebuild ${args.join(' ')}`);
         return true;
     }
-    await (0, commands_1.runCommand)('xcodebuild', args, { verbose: config.verbose });
+    await (0, spawn_async_1.default)('xcodebuild', args, { stdio: config.verbose ? 'inherit' : 'pipe' });
     return true;
 };
 const cleanUpArtifacts = async (config) => {
@@ -161,7 +161,7 @@ const buildFramework = async (config) => {
         return;
     }
     return (0, spinner_1.withSpinner)({
-        operation: () => (0, commands_1.runCommand)('xcodebuild', args, { verbose: config.verbose }),
+        operation: () => (0, spawn_async_1.default)('xcodebuild', args, { stdio: config.verbose ? 'inherit' : 'pipe' }),
         loaderMessage: 'Compiling framework...',
         successMessage: 'Compiling framework succeeded',
         errorMessage: 'Compiling framework failed',
@@ -292,7 +292,7 @@ const createXCframework = async (config, at) => {
         return;
     }
     return (0, spinner_1.withSpinner)({
-        operation: () => (0, commands_1.runCommand)('xcodebuild', args, { verbose: config.verbose }),
+        operation: () => (0, spawn_async_1.default)('xcodebuild', args, { stdio: config.verbose ? 'inherit' : 'pipe' }),
         loaderMessage: 'Packaging framework into an XCFramework...',
         successMessage: 'Packaging framework into an XCFramework succeeded',
         errorMessage: 'Packaging framework into an XCFramework failed',
@@ -423,7 +423,7 @@ const getSupportedPlatforms = async (config) => {
     // Try to infer `IPHONEOS_DEPLOYMENT_TARGET` from the project
     const args = ['-workspace', config.workspace, '-scheme', config.scheme, '-showBuildSettings'];
     try {
-        const { stdout } = await (0, commands_1.runCommand)('xcodebuild', args, { verbose: false });
+        const { stdout } = await (0, spawn_async_1.default)('xcodebuild', args);
         const regex = /^\s*IPHONEOS_DEPLOYMENT_TARGET = (.+)$/m;
         const value = regex.exec(stdout)?.[1]?.trim();
         if (value) {
