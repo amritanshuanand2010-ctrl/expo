@@ -7,6 +7,12 @@ exports.convertBcp47ToResourceQualifier = convertBcp47ToResourceQualifier;
 const config_plugins_1 = require("expo/config-plugins");
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
+const BCP47_LOCALE_RE = /^[A-Za-z]{1,3}(-[A-Za-z0-9]{1,8})*$/;
+function assertLocale(value) {
+    if (typeof value !== 'string' || !BCP47_LOCALE_RE.test(value)) {
+        throw new Error(`Invalid supportedLocales entry ${JSON.stringify(value)}: must be a BCP-47 locale tag.`);
+    }
+}
 function convertBcp47ToResourceQualifier(locale) {
     return `b+${locale.replaceAll('-', '+')}`;
 }
@@ -54,6 +60,7 @@ function withExpoLocalizationAndroid(config, data) {
         ? mergedConfig.supportedLocales.android
         : mergedConfig.supportedLocales;
     if (supportedLocales) {
+        supportedLocales.forEach(assertLocale);
         config = (0, config_plugins_1.withDangerousMod)(config, [
             'android',
             (config) => {
