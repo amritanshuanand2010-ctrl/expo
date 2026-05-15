@@ -23,6 +23,16 @@ export type ConfigPluginProps = {
       };
 };
 
+const BCP47_LOCALE_RE = /^[A-Za-z]{1,3}(-[A-Za-z0-9]{1,8})*$/;
+
+function assertLocale(value: unknown): asserts value is string {
+  if (typeof value !== 'string' || !BCP47_LOCALE_RE.test(value)) {
+    throw new Error(
+      `Invalid supportedLocales entry ${JSON.stringify(value)}: must be a BCP-47 locale tag.`
+    );
+  }
+}
+
 export function convertBcp47ToResourceQualifier(locale: string): string {
   return `b+${locale.replaceAll('-', '+')}`;
 }
@@ -78,6 +88,7 @@ function withExpoLocalizationAndroid(config: ExpoConfig, data: ConfigPluginProps
       : mergedConfig.supportedLocales;
 
   if (supportedLocales) {
+    supportedLocales.forEach(assertLocale);
     config = withDangerousMod(config, [
       'android',
       (config) => {
