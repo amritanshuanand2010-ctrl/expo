@@ -1,9 +1,9 @@
+import spawnAsync from '@expo/spawn-async';
 import chalk from 'chalk';
 import { execSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 
-import { runCommand } from './commands';
 import { XCFramework } from './constants';
 import CLIError from './error';
 import {
@@ -130,7 +130,7 @@ const bundleSourceBuiltFramework = async (
     return true;
   }
 
-  await runCommand('xcodebuild', args, { verbose: config.verbose });
+  await spawnAsync('xcodebuild', args, { stdio: config.verbose ? 'inherit' : 'pipe' });
   return true;
 };
 
@@ -184,7 +184,7 @@ export const buildFramework = async (config: IosConfig) => {
   }
 
   return withSpinner({
-    operation: () => runCommand('xcodebuild', args, { verbose: config.verbose }),
+    operation: () => spawnAsync('xcodebuild', args, { stdio: config.verbose ? 'inherit' : 'pipe' }),
     loaderMessage: 'Compiling framework...',
     successMessage: 'Compiling framework succeeded',
     errorMessage: 'Compiling framework failed',
@@ -333,7 +333,7 @@ export const createXCframework = async (config: IosConfig, at: string) => {
   }
 
   return withSpinner({
-    operation: () => runCommand('xcodebuild', args, { verbose: config.verbose }),
+    operation: () => spawnAsync('xcodebuild', args, { stdio: config.verbose ? 'inherit' : 'pipe' }),
     loaderMessage: 'Packaging framework into an XCFramework...',
     successMessage: 'Packaging framework into an XCFramework succeeded',
     errorMessage: 'Packaging framework into an XCFramework failed',
@@ -484,7 +484,7 @@ export const getSupportedPlatforms = async (config: IosConfig): Promise<string[]
   const args = ['-workspace', config.workspace, '-scheme', config.scheme, '-showBuildSettings'];
 
   try {
-    const { stdout } = await runCommand('xcodebuild', args, { verbose: false });
+    const { stdout } = await spawnAsync('xcodebuild', args);
     const regex = /^\s*IPHONEOS_DEPLOYMENT_TARGET = (.+)$/m;
     const value = regex.exec(stdout)?.[1]?.trim();
     if (value) {
